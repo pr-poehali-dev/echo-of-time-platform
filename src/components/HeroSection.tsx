@@ -1,19 +1,18 @@
-
-import { Button } from '@/components/ui/button';
-import Icon from '@/components/ui/icon';
-import { PLATFORM_CONFIG, STATS } from '@/lib/constants';
+import { Button } from "@/components/ui/button";
+import Icon from "@/components/ui/icon";
+import { PLATFORM_CONFIG, STATS } from "@/lib/constants";
 
 const HeroSection = () => {
   return (
     <div className="relative bg-gradient-to-b from-red-50 to-white">
       {/* Background pattern */}
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23dc2626" fill-opacity="0.03"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
-      
+      <div className="absolute inset-0 bg-red-50 opacity-30"></div>
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="text-center">
           {/* Logo */}
           <div className="mb-8">
-            <img 
+            <img
               src={PLATFORM_CONFIG.logo}
               alt={PLATFORM_CONFIG.name}
               className="h-24 w-24 mx-auto mb-4"
@@ -32,16 +31,24 @@ const HeroSection = () => {
               Каждая история важна. Каждая память бесценна.
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Присоединяйтесь к крупнейшему сообществу хранителей исторической памяти. 
-              Делитесь семейными историями, изучайте архивы, создавайте связи между прошлым и настоящим.
+              Присоединяйтесь к крупнейшему сообществу хранителей исторической
+              памяти. Делитесь семейными историями, изучайте архивы, создавайте
+              связи между прошлым и настоящим.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8 py-3">
+              <Button
+                size="lg"
+                className="bg-red-600 hover:bg-red-700 text-white px-8 py-3"
+              >
                 <Icon name="Archive" size={20} className="mr-2" />
                 Исследовать архив
               </Button>
-              <Button size="lg" variant="outline" className="border-red-600 text-red-600 hover:bg-red-50 px-8 py-3">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-red-600 text-red-600 hover:bg-red-50 px-8 py-3"
+              >
                 <Icon name="Users" size={20} className="mr-2" />
                 Поделиться историей
               </Button>
